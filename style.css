@@ -3,11 +3,13 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     font-weight: bold;
     background-color: hsl(30, 7%, 65%);
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    min-height: 100vh;
 }
 
 #container {
@@ -46,14 +48,13 @@ h1 {
     cursor: pointer;
     border: 3px solid black;
     text-align: center;
+    outline: none; 
+    overflow: hidden;
+    transition: background-color 0.15s ease;
 }
 
 .choices button img{
     max-height: 90px;
-}
-
-.choices button:hover {
-    background-color: hsl(37, 9%, 85%);
 }
 
 .imgChoices{
@@ -110,8 +111,7 @@ h1 {
     transition: background-color 0.15s ease;
 }
 
-@media (max-width: 610px) {
-    
+@media (max-width: 610px) {    
     h1 {
         font-size: 2rem;
     }
@@ -232,6 +232,6 @@ h1 {
     }
 
     .imgChoices {
-        max-height: 20px; 
+        max-height: 30px; 
     }
 }
